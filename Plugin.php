@@ -51,6 +51,8 @@ class Bilifan_Plugin implements Typecho_Plugin_Interface
     $form->addInput($name);
     $name = new Typecho_Widget_Helper_Form_Element_Text('Bilifan_cookie', NULL, 'cookie', _t('请输入b站cookie'));
     $form->addInput($name);
+    $size = new Typecho_Widget_Helper_Form_Element_Text('Bilifan_size', NULL, '20', _t('分页大小'));
+    $form->addInput($size);
   }
 
   /**
@@ -63,7 +65,7 @@ class Bilifan_Plugin implements Typecho_Plugin_Interface
   public static function personalConfig(Typecho_Widget_Helper_Form $form)
   {
   }
-
+  
   /**
    * 插件实现方法
    *

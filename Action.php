@@ -14,12 +14,13 @@ class Bilifan_Action extends Typecho_Widget implements Widget_Interface_Do
   {
     $this->on($this->request->isGet())->api();
   }
+  
   private function api()
   {
-    $size = 20;
     $page = $this->request->get('page');
     $uid = Typecho_Widget::widget('Widget_Options')->plugin('Bilifan')->Bilifan_uid;
     $cookie = Typecho_Widget::widget('Widget_Options')->plugin('Bilifan')->Bilifan_cookie;
+    $size = Typecho_Widget::widget('Widget_Options')->plugin('Bilifan')->Bilifan_size;
     $bili = new BilibiliAnimeInfo($uid, $cookie);
     $sum = $bili->sum / $size;
     $sum += $bili->sum % $size === 0 ? 0 : 1;
