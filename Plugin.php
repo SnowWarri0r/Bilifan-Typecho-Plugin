@@ -1,10 +1,20 @@
 <?php
+/*
+ * @Author: SnowWarri0r
+ * @LastModifiedBy: SnowWarri0r
+ * @GithubUser: SnowWarri0r
+ * @Date: 2022-03-25 11:58:40
+ * @Company: ncuhome
+ * @LastEditTime: 2022-03-25 12:00:59
+ * @FilePath: \Bilifan\Plugin.php
+ * @Description: 
+ */
 /**
  * b站追番插件(适配handsome主题)
  *
  * @package Bilifan
  * @author SnowWarri0r
- * @version 1.0.0
+ * @version 1.0.1
  * @link https://www.onesnowwarrior.cn
  */
 if (!defined('__TYPECHO_ROOT_DIR__')) exit;
